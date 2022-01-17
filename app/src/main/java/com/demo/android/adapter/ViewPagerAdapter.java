@@ -9,7 +9,8 @@ import android.widget.ImageView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.demo.R;
+import com.demo.android.R;
+
 
 public class ViewPagerAdapter extends PagerAdapter {
 

@@ -1,12 +1,13 @@
 package com.demo.android.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.demo.R
+import com.demo.android.R
 import com.demo.android.model.Course
 
 class CustomRecyclerAdapter(val context : Context, var courseList: ArrayList<Course>) : RecyclerView.Adapter<CustomRecyclerAdapter.ViewHolder>() {
@@ -16,7 +17,7 @@ class CustomRecyclerAdapter(val context : Context, var courseList: ArrayList<Cou
     }
 
     override fun onCreateViewHolder(title: ViewGroup, p1: Int): ViewHolder {
-        val v = LayoutInflater.from(title?.context).inflate(R.layout.recycler_view_item, title, false)
+        val v = LayoutInflater.from(title.context).inflate(R.layout.recycler_view_item, title, false)
         return ViewHolder(v);
     }
 
@@ -29,8 +30,8 @@ class CustomRecyclerAdapter(val context : Context, var courseList: ArrayList<Cou
     }
 
     // To get the data to search Category
+    @SuppressLint("NotifyDataSetChanged")
     fun filterList(filteredCourseList: ArrayList<Course>) {
         this.courseList = filteredCourseList;
-        notifyDataSetChanged();
     }
 }

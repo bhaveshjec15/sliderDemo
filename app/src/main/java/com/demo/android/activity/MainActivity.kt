@@ -8,15 +8,13 @@ import android.widget.*
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demo.android.adapter.CustomRecyclerAdapter
-import com.example.demo.databinding.ActivityMainBinding
 import com.demo.android.model.Course
 import com.demo.android.utils.Helper
 import com.demo.android.adapter.ViewPagerAdapter
-
 import androidx.core.content.ContextCompat
-import com.example.demo.R
-
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
+import com.demo.android.R
+import com.demo.android.databinding.ActivityMainBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
